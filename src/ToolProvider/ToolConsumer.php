@@ -6,6 +6,7 @@ use IMSGlobal\LTI\ToolProvider\DataConnector;
 use IMSGlobal\LTI\ToolProvider\Service;
 use IMSGlobal\LTI\HTTPMessage;
 use IMSGlobal\LTI\OAuth;
+use stdClass;
 
 /**
  * Class to represent a tool consumer
@@ -55,6 +56,13 @@ class ToolConsumer
  * @var string $consumerGuid
  */
     public $consumerGuid = null;
+
+/**
+ * The tool profile object.
+ * @var stdClass $profile.
+ */
+    public $profile = null;
+
 /**
  * Optional CSS path (as reported by last tool consumer connection).
  *
